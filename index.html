@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Calculator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .calculator {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    /* .result {
+      height: 50px;
+      background-color: lightyellow;
+      text-align: right;
+      padding: 10px;
+      font-size: 24px;
+      margin-bottom: 10px;
+    } */
+    .btn {
+      width: 70px;
+      height: 70px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container calculator">
+    <h1>calculator</h1>
+    <!-- <div class="result " id="result">0</div> -->
+    <input id="result" type="text" class="w-100 mt-2" placeholder="0" readonly style="background-color: white;text-align: right;">
+    <div class="row">
+        <div class="col-md-3">
+            <button onclick="display(7)" class="btn fs-24px btn-dark" >7</button> 
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(8)" class="btn btn-dark" >8</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(9)" class="btn btn-dark" >9</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display('/')" class="btn btn-warning" >/</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button onclick="display(4)"  class="btn btn-dark" >4</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(5)" class="btn btn-dark" >5</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(6)" class="btn btn-dark" >6</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display('*')"class="btn btn-warning" >*</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button onclick="display(1)"class="btn btn-dark" >1</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(2)" class="btn btn-dark" >2</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display(3)" class="btn btn-dark" >3</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display('-')" class="btn btn-warning" >-</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button onclick="display(0)" class="btn btn-dark" >0</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display('.')" class="btn btn-warning" >.</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="equal('=')" class="btn btn-warning" >=</button>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display('+')" class="btn btn-warning" >+</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button onclick="back()"  class="btn btn-warning" >//</button>
+            <button onclick="clearAll()" class="btn btn-danger" >AC</button>
+        </div>
+    </div>
+    </body>
+    <script src="./cal.js">
+
+    </script>
+    </html>
